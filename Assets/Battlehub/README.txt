@@ -1,0 +1,1 @@
+Documentation: http://rteditor.battlehub.net/dock-panels/

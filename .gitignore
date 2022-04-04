@@ -1,0 +1,15 @@
+.idea/*
+.vs/*
+Library/*
+!Library/*.asset
+!Library/*.prefs
+!Library/ScriptMapper
+Logs/*
+obj/*
+Output/*
+Releases/*
+Video/*
+Apple/*
+.vsconfig
+Temp/*
+.plastic/
