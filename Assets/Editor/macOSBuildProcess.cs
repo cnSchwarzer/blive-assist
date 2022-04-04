@@ -5,7 +5,8 @@ using System.IO;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
-using UnityEngine;
+using UnityEngine; 
+using UnityEditor.iOS.Xcode;
 
 public class macOSBuildProcess : IPostprocessBuildWithReport
 {  
@@ -17,6 +18,7 @@ public class macOSBuildProcess : IPostprocessBuildWithReport
             void Replace(string file) {
                 var texts = File.ReadAllText(file);
                 texts = texts.Replace("弹幕姬", "BliveAssist");
+                File.WriteAllText(file, texts);
             }
  
             Replace(path + $"/macOS.xcodeproj/project.pbxproj");
@@ -29,8 +31,8 @@ public class macOSBuildProcess : IPostprocessBuildWithReport
             plist.ReadFromFile(plistPath);
 
             PlistElementDict root = plist.root;
-            root.values["CFBundleName"] = "弹幕姬";
-            root.values["CFBundleExecutable"] = "BliveAssist";
+            root.SetString("CFBundleName", "弹幕姬");
+            root.SetString("CFBundleExecutable", "BliveAssist"); 
 
             plist.WriteToFile(plistPath);
         }
