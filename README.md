@@ -5,11 +5,12 @@
 
 本软件的收费政策目前为：在Windows、Android平台永久免费，在iOS、macOS平台收费6元。
 
+下载：[官网](https://sch.ink)
+
 #### 软件架构 
 目前基于 Unity 2021.2.17f1 进行开发，您需要下载该版本的 Unity 以及一个适配的 IDE 如 VS2022、Rider
 
-#### 使用说明
-见[官网](https://sch.ink)
+#### 使用说明 
 
 见[视频](https://www.bilibili.com/video/BV1jF411h75w)介绍
 
