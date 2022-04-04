@@ -15,4 +15,4 @@
 
 #### 许可证
 
-[查看](https://gitee.com/Schwarzer/blive-assist/blob/master/LICENSE)
+[查看](https://github.com/cnSchwarzer/blive-assist/blob/master/LICENSE)
